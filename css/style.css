@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    /* height: 80px; */
+    width: 100%;
+    padding: 15px 70px;
+    /* overflow: hidden; */
+    background-color: indigo;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.logo__img {
+    width: 40px;
+    height: auto;
+}
+
+.nav__menu {
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+    justify-content: end;
+    gap: 50px;
+}
+
+.nav__item {
+    color: #999;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.nav__item:hover {
+    color: #fa7339;
+}
+
+/* ------------------------- */
+
+.presentacion__container {
+    background-color: #6a0dac;
+    width: 100%;
+    padding: 70px;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    width: 1200px;
+    margin: auto;
+}
+
+.presentacion__titulo {
+    color: #fa7339;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.presentacion__descripcion {
+    flex: 1;
+    padding: 25px 40px;
+}
+
+.presentacion__texto {
+    color: #fff;
+    font-weight: lighter;
+    padding: 20px 0px;
+    line-height: 2.23em;
+}
+
+.presentacion__btn-informacion {
+    color: #fff;
+    background-color: #f86d31;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    transition: background-color .5s;
+    margin-top: 20px;
+}
+
+.presentacion__btn-informacion:hover {
+    background-color: #eb500d;
+}
+
+.presentacion__grafico {
+    flex: 1;
+    text-align: center;
+}
+
+.presentacion__img {
+    width: 100%;
+    padding: 20px;
+}
+
+/* ------------------------- */
+
+.caracteristicas__container {
+    padding: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.caracteristicas {
+    display: flex;
+    gap: 25px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.caracteristicas__item {
+    flex: 1;
+    padding: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    /* box-shadow: 0 0 7px rgba(0, 0, 0, .7); */
+    transition: box-shadow .7s;
+}
+
+.caracteristicas__item:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .304);
+}
+
+.caracteristicas__icon {
+    font-size: 4em;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.caracteristicas__font-icon {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s, color .5s;
+
+}
+
+.caracteristicas__item:hover .caracteristicas__font-icon {
+    background-color: #fa7339;
+    color: #fff;
+}
+
+.caracteristica__titulo {
+    font-weight: lighter;
+    color: #fa7339;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.caracteristica__descripcion {
+    line-height: 2em;
+}
+
+/* ------------------------- */
+
+.footer__container {
+    width: 100%;
+    padding: 70px;
+    padding-bottom: 0;
+    background-color: #1a2933;
+    color: #ddd;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__contacto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__titulo-seccion {
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color: #fa7339;
+}
+
+.footer__datos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__dato-icon {
+    margin-right: 10px;
+}
+
+.footer__dato {
+    line-height: 2em;
+}
+
+.footer__redes-sociales {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__redes-sociales .footer__titulo-seccion {
+    text-align: center;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__red-icon {
+    font-size: 2.5em;
+    transition: color .7s;
+    cursor: pointer;
+}
+
+.footer__red .fa-facebook:hover {
+    color: #0866ff;
+}
+
+.footer__red .fa-instagram:hover {
+    color: #eb3e7d;
+}
+
+.footer__red .fa-youtube:hover {
+    color: #ff0000;
+}
+
+.footer__copyright {
+    color: #999;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #fa7339;
+    text-align: center;
+}
